@@ -49,17 +49,17 @@ when you create a YouTube object::
 When instantiating a YouTube object, these named arguments can be passed in to
 improve functionality. 
 
-The on_progress_callback function will run whenever a chunk is downloaded from
+The `on_progress_callback` function will run whenever a chunk is downloaded from
 a video, and is called with three arguments: the stream, the data chunk, and
 the bytes remaining in the video. This could be used, for example, to display a
 progress bar.
 
-The on_complete_callback function will run after a video has been fully
+The `on_complete_callback` function will run after a video has been fully
 downloaded, and is called with two arguments: the stream and the file path.
 This could be used, for example, to perform post-download processing on a video
 like trimming the length of it.
 
-The use_oauth and allow_oauth_cache flags allow you to authorize pytube to
+The `use_oauth` and `allow_oauth_cache` flags allow you to authorize pytube to
 interact with YouTube using your account, and can be used to bypass age
 restrictions or access private videos and playlists. If allow_oauth_cache is
 set to True, you should only be prompted to do so once, after which point
